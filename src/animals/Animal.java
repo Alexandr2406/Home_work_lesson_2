@@ -34,25 +34,4 @@ public abstract class Animal {
         }
     }
 
-    public void wakeUp(Animal animal) {
-        if (this.statusSleep) {
-            this.statusSleep = false;
-            System.out.println(animal.getNameAnimal() + " проснулся, и слушает тебя");
-        } else {
-            System.out.println(animal.getNameAnimal() + " не спит, и слушает тебя");
-        }
-    }
-
-    public void getStatusAnimal(Animal animal) {
-        if (statusSleep) {
-            animal.sleep(animal);
-        }
-        if (!statusSleep) {
-            System.out.println(animal.getNameAnimal() + " сейчас не спит, и слушает вас");
-        }
-        if (statusEat) {
-            animal.eat(animal);
-        }
-        System.out.println(" ");
-    }
-}
+      }
